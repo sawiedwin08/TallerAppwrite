@@ -128,6 +128,10 @@ class HomePage extends StatelessWidget {
                                               email: _emailController.text,
                                             );
                                             controller.updateUser(updatedUser);
+
+                                            _usernameController.clear();
+                                            _emailController.clear();
+
                                             Navigator.pop(context);
                                           }
                                         },
